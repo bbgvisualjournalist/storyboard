@@ -1,0 +1,36 @@
+body{font-family: Arial, sans-serif; margin: 0; padding:0;}
+#container, #footer{width: 90%; max-width: 1024px;margin:0 auto; padding: 20px 0;}
+#container h1{text-align: left; margin: 0;}
+#container h3{font-weight: normal; margin-top:0;}
+.panel {width: 100%; margin:0 0 20px 0; padding:0; display: inline-block; vertical-align: top;}
+.panel .image{border: 3px solid #333; width: 100%; padding:0; margin:0; position: relative;}
+
+.panel .image{background-position: center center;}
+.panel .image{background-size: cover;}
+
+.panel .image img{width: 100%; height: auto; padding:0; margin:0;}
+.panel .image p.number{position: absolute; top: 0; left:0; background-color: #333; color:#FFF; margin:0; padding: 5px;}
+.panel .script{color: #000; font-family: Arial, sans-serif; font-weight: bold;}
+.panel .description{color: #666; font-family: Arial, sans-serif; font-weight: normal;}
+.panel:hover p.script{background-color: yellow;}
+
+
+@media only screen and (min-width: 600px) {
+	.panel {width: 45%; margin:0 4% 20px 0; }
+}
+@media only screen and (min-width: 900px) {
+	.panel {width: 30%; margin:0 3% 20px 0; }
+}
+
+
+@media print {
+	body{font-size: .8em;}
+	.panel {width: 45%; margin:0 4% 20px 0; }
+	.panel .image{-webkit-print-color-adjust: exact;}
+
+	/*#staff{page-break-after: always;}*/
+	@page {
+	margin: 1cm 0 0 1cm;
+	}
+	@page {size: portrait}
+}
