@@ -1,5 +1,5 @@
 # storyboard
-Super simple web application for creating storyboards from a Google spreadsheet. 
+Super simple web application for creating storyboards from a Google spreadsheet using [TabletopJS](https://github.com/jsoma/tabletop). 
 
 ###Why?
 I was tired of creating storyboards in Illustrator or InDesign and making updates when people changed the script. By using a Google spreadsheet, editors can make changes and the panels will automatically reflow.
