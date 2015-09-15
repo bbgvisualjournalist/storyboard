@@ -10,9 +10,11 @@ body{font-family: Arial, sans-serif; margin: 0; padding:0;}
 
 .panel .image img{width: 100%; height: auto; padding:0; margin:0;}
 .panel .image p.number{position: absolute; top: 0; left:0; background-color: #333; color:#FFF; margin:0; padding: 5px;}
-.panel .script{color: #000; font-family: Arial, sans-serif; font-weight: bold;}
-.panel .description{color: #666; font-family: Arial, sans-serif; font-weight: normal;}
+.panel .script{color: #000; font-family: Arial, sans-serif; font-weight: bold; }
+.panel .description{color: #999; font-family: Arial, sans-serif; font-weight: normal;}
+.panel .timecode {font-family: Courier, monospace; color: #999;}
 .panel:hover p.script{background-color: yellow;}
+.panel p{margin: .4em 0;}
 
 
 @media only screen and (min-width: 600px) {
@@ -25,12 +27,12 @@ body{font-family: Arial, sans-serif; margin: 0; padding:0;}
 
 @media print {
 	body{font-size: .8em;}
-	.panel {width: 45%; margin:0 4% 20px 0; }
+	.panel {width: 29%; margin:0 4% 20px 0; }
 	.panel .image{-webkit-print-color-adjust: exact;}
 
 	/*#staff{page-break-after: always;}*/
 	@page {
 	margin: 1cm 0 0 1cm;
 	}
-	@page {size: portrait}
+	@page {size: landscape}
 }
