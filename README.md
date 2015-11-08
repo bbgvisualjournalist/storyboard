@@ -1,5 +1,5 @@
 # storyboard
-Super simple web application for creating storyboards from a Google spreadsheet using [TabletopJS](https://github.com/jsoma/tabletop). 
+Super simple web application for creating responsive storyboards and book dummies from a Google spreadsheet using [TabletopJS](https://github.com/jsoma/tabletop). 
 
 ###Why?
 I was tired of creating storyboards in Illustrator or InDesign and making updates when people changed the script. By using a Google spreadsheet, editors can make changes and the panels will automatically reflow.
@@ -11,4 +11,4 @@ Define the project info on the 'config' sheet, then add the voice over script, d
 
 Then publish the spreadsheet to the web and include the URL for the published spreadsheet in the HTML (or as a query string ?sheet= ). 
 
-I've added some basic print styles so it should look ok when you print it out, but you'll want to use Chrome because I'm placing the panel images as background images to make them responsive AND keep them 16:9.
+I've added some basic print styles so it should look ok when you print it out, but you'll want to use Chrome because I'm placing the panel images as background images to make them responsive AND keep them at the desired aspect ratio (16:9, 4:3, square or trade).
